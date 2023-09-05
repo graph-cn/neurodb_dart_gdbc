@@ -77,10 +77,10 @@ packages:
     dependency: "direct main"
     description:
       name: dart_gdbc
-      sha256: "9819c5a82b589c0c2400503aa89ad06bd527c38605b4643a50784141950a31e0"
+      sha256: dcefe50e7f9f0c208421c6283175aa676fda03667c310911e2d5837fb7ba7b9b
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.1+3"
+    version: "0.0.2+1"
   file:
     dependency: transitive
     description:
@@ -181,10 +181,10 @@ packages:
     dependency: "direct main"
     description:
       name: neurodb_dart_driver
-      sha256: "3106e3847abff67fd53e1feec0b17d2edd9adf70cbd80787e163993bc882fdeb"
+      sha256: "9099103becf0e4125b3a4df59bb023c36bc0c70f6e786668a31fa4e5156b4d4d"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.1+2"
+    version: "0.0.1+3"
   node_preamble:
     dependency: transitive
     description:

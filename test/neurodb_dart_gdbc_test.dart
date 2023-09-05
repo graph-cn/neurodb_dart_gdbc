@@ -25,12 +25,16 @@ void main() async {
   });
 
   test('Test space', () async {
-    var rs = await conn.executeQuery('show databases');
+    var rs = await conn.executeQuery('call db.labels()');
     print(rs);
   });
 
   test('Test stmt', () async {
-    var rs = await stmt.executeQuery(gql: 'show databases');
+    var rs = await conn.executeQuery('show databases');
     print(rs);
+  });
+
+  tearDownAll(() {
+    conn.close();
   });
 }
