@@ -17,7 +17,6 @@ class NeuroDBConnection extends Connection {
 
   @override
   Future<void> commit() {
-    // TODO: implement commit
     throw UnimplementedError();
   }
 
@@ -40,39 +39,35 @@ class NeuroDBConnection extends Connection {
 
   @override
   Future<int> executeUpdate(String gql) {
-    // TODO: implement executeUpdate
     throw UnimplementedError();
   }
 
   @override
   Future<bool> getAutoCommit() {
-    // TODO: implement getAutoCommit
     throw UnimplementedError();
   }
 
   @override
   Future<ResultSetMetaData> getMetaData() {
-    // TODO: implement getMetaData
     throw UnimplementedError();
   }
 
   @override
   Future<bool> isClosed() {
-    // TODO: implement isClosed
     throw UnimplementedError();
   }
 
   @override
-  Future<PreparedStatement> prepareStatement(String gql,
-      {String Function(String p1, Map<String, dynamic>? p2)? render}) {
-    // TODO: implement prepareStatement
-    throw UnimplementedError();
+  Future<PreparedStatement> prepareStatement(
+    String gql, {
+    String Function(String, Map<String, dynamic>?)? render,
+  }) async {
+    return NeuroDbPreparedStatement(this, gql: gql, render: render);
   }
 
   @override
   Future<PreparedStatement> prepareStatementWithParameters(
       String gql, List<ParameterMetaData> parameters) {
-    // TODO: implement prepareStatementWithParameters
     throw UnimplementedError();
   }
 

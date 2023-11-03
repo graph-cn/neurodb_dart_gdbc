@@ -156,7 +156,7 @@ class NeuroDBResultSet extends ResultSet {
     var rows = [];
     var colLen = dataSet.records.isNotEmpty ? dataSet.records[0].length : 0;
 
-    var cols = List.filled(colLen, '');
+    var cols = List.generate(colLen, (index) => 'col$index');
     // var cols = dataSet.keyNames;
     meta.submetas.addAll(
       cols

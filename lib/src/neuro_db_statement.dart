@@ -1,22 +1,26 @@
 part of neurodb_dart_gdbc;
 
 class NeuroDBStatement extends Statement {
-  NeuroDBStatement(NeuroDBConnection neuroDBConnection);
+  NeuroDBConnection _conn;
+  NeuroDBStatement(this._conn);
 
   @override
-  Future<bool> execute({required String gql}) {
-    // TODO: implement execute
-    throw UnimplementedError();
+  Future<bool> execute({Map<String, dynamic>? params, String? gql}) async {
+    var rs = await executeQuery(gql: gql);
+    return rs.success;
   }
 
   @override
-  Future<ResultSet> executeQuery({required String gql}) {
-    // TODO: implement executeQuery
-    throw UnimplementedError();
+  Future<ResultSet> executeQuery(
+      {Map<String, dynamic>? params, String? gql}) async {
+    if (gql == null) {
+      throw GdbcQueryException(message: 'gql is null');
+    }
+    return await _conn.executeQuery(gql, params: params);
   }
 
   @override
-  Future<int> executeUpdate({required String gql}) {
+  Future<int> executeUpdate({Map<String, dynamic>? params, String? gql}) {
     // TODO: implement executeUpdate
     throw UnimplementedError();
   }
