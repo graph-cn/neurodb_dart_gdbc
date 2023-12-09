@@ -1,4 +1,4 @@
-import 'package:neurodb_dart_gdbc/neurodb_dart_gdbc.dart';
+part of "../../neurodb_dart_gdbc.dart";
 
 class NeuroDbPreparedStatement extends NeuroDBStatement
     implements PreparedStatement {

@@ -1,7 +1,7 @@
-part of neurodb_dart_gdbc;
+part of "../../neurodb_dart_gdbc.dart";
 
 class NeuroDBStatement extends Statement {
-  NeuroDBConnection _conn;
+  final NeuroDBConnection _conn;
   NeuroDBStatement(this._conn);
 
   @override

@@ -1,4 +1,4 @@
-part of neurodb_dart_gdbc;
+part of "../../neurodb_dart_gdbc.dart";
 
 class NeuroDBDriver extends Driver {
   @override

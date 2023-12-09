@@ -13,6 +13,7 @@ void main() async {
   );
 
   var stmt = await conn.createStatement();
+  print(stmt);
 
   test('Test List', () async {
     var rs = await conn.executeQuery('match (n)-[r]->(m) return n,r,m');
