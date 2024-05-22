@@ -77,10 +77,10 @@ packages:
     dependency: "direct main"
     description:
       name: dart_gdbc
-      sha256: "3631272ca3e86eca3b2fbfbfb4192903014b6a8b139bdd3bb51e5dd808adcb02"
+      sha256: "60039d8f51714c1cf65c17318ff9261219a45e621d58a9a14962d9ff70943571"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.3"
+    version: "0.0.4"
   file:
     dependency: transitive
     description:
