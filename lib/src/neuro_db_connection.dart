@@ -82,4 +82,8 @@ class NeuroDBConnection extends Connection {
     // TODO: implement setAutoCommit
     throw UnimplementedError();
   }
+
+  @override
+  // TODO: implement databaseName
+  String? get databaseName => throw UnimplementedError();
 }
