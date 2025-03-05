@@ -1,6 +1,6 @@
 name: neurodb_dart_gdbc
 description: A database driver for neurodb based on dart_gdbc, help you to access neurodb in dart language
-version: 0.0.4
+version: 0.0.5
 repository: https://github.com/graph-cn/neurodb_dart_gdbc
 
 environment:
@@ -10,7 +10,7 @@ dev_dependencies:
   lints: ^3.0.0
   test: ^1.21.0
 dependencies:
-  # dart_gdbc: ^0.0.4+1
-  dart_gdbc: #^0.0.4
-    path: ../../
+  dart_gdbc: ^0.0.5
+  # dart_gdbc: #^0.0.4
+  #   path: ../../
   neurodb_dart_driver: ^0.0.1+4
